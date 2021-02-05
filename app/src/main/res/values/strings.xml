@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Calendar QR</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Scan or Generate</string>
+    <string name="generate_fragment_label">Generate a QR code</string>
+    <string name="created_qr_fragment_label">QR code created</string>
+    <string name="previous">Cancel</string>
+
+    <!-- Strings used on event forms -->
+    <string name="event_name">Event Name</string>
+    <string name="event_name_required">Event Name (required)</string>
+    <string name="event_location">Location</string>
+    <string name="event_location_required">Location (required)</string>
+    <string name="event_date">Date and Time</string>
+    <string name="event_date_only">Event Date</string>
+    <string name="event_time_only">Event Time</string>
+    <string name="event_date_invalid">Date and Time (cannot be past)</string>
+    <string name="event_description">Description</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

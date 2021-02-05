@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.calendarqr.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_GenerateFragment"
+            app:destination="@id/GenerateFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_fragment_event_details_"
+            app:destination="@id/fragment_event_details_" />
+    </fragment>
+    <fragment
+        android:id="@+id/CreatedQRFragment"
+        android:name="com.calendarqr.CreatedQRFragment"
+        android:label="@string/created_qr_fragment_label"
+        tools:layout="@layout/fragment_created_qr">
+        <action
+            android:id="@+id/action_CreatedQRFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_CreatedQRFragment_to_GenerateFragment"
+            app:destination="@id/GenerateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GenerateFragment"
+        android:name="com.calendarqr.GenerateFragment"
+        android:label="@string/generate_fragment_label"
+        tools:layout="@layout/fragment_generate">
+
+        <action
+            android:id="@+id/action_GenerateFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_GenerateFragment_to_CreatedQRFragment"
+            app:destination="@id/CreatedQRFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_event_details_"
+        android:name="com.calendarqr.fragment_event_details_"
+        android:label="fragment_event_details_"
+        tools:layout="@layout/fragment_event_details_" />
+</navigation>
